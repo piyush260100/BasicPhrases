@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FDF7F7"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/grid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="4">
+
+            <Button
+                android:id="@+id/p1"
+                android:background="@android:color/black"
+                android:onClick="click"
+                android:tag="hello"
+                android:text="Hello"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p2"
+                android:background="@android:color/white"
+                android:onClick="click"
+                android:tag="excuse_me"
+                android:text="Excuse Me"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="0"
+                app:layout_rowWeight="1"
+                tools:text="Excuse Me" />
+
+            <Button
+                android:id="@+id/p3"
+                android:background="@android:color/white"
+                android:onClick="click"
+                android:tag="beautiful"
+                android:text="Beautiful"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p4"
+                android:background="@android:color/black"
+                android:onClick="click"
+                android:tag="thatgood"
+                android:text="That's Good"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="1"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p5"
+                android:background="@android:color/black"
+                android:onClick="click"
+                android:tag="goodbye"
+                android:text="GoodBye"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="2"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p6"
+                android:background="@android:color/white"
+                android:onClick="click"
+                android:tag="see_u_later"
+                android:text="See You \n Later"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="2"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p7"
+                android:background="@android:color/white"
+                android:onClick="click"
+                android:tag="please"
+                android:text="Please"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_column="0"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="3"
+                app:layout_rowWeight="1" />
+
+            <Button
+                android:id="@+id/p8"
+                android:background="@android:color/black"
+                android:onClick="click"
+                android:tag="thank_you"
+                android:text="Thank You"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_column="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_row="3"
+                app:layout_rowWeight="1" />
+        </android.support.v7.widget.GridLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
